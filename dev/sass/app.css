@@ -65,9 +65,9 @@ a {
   .g-header .g-logo {
     float: left;
     margin-left: 2%;
-    width: 60px;
+    width: 35px;
     height: 26px;
-    background: url("../icons/logo.svg") no-repeat center;
+    background: url("../icons/yq_bai.png") no-repeat center;
     background-size: 100% 100%;
     opacity: .8;
     transition: all .2s; }
