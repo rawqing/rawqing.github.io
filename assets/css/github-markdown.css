@@ -232,7 +232,7 @@
 }
 
 .markdown-body a {
-  color: inherit;
+  color: #337ab7;
   text-decoration: underline;
 }
 
@@ -448,6 +448,7 @@ li p:nth-child(2) {
 .markdown-body blockquote {
   padding: 0 1em;
   color: #6a737d;
+  font-style: italic;
   border-left: 0.25em solid #dfe2e5;
 }
 
