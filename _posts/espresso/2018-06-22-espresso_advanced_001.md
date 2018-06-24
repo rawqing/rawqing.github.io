@@ -1,6 +1,6 @@
 ---
 layout: post
-title: '基于Espresso的Android UI自动化之一'
+title: '基于Espresso的Android UI自动化框架设计之一'
 subtitle: '设计之初 -- espresso无源码测试环境搭建'
 date: 2018-06-22
 author: 落雨寒霜
