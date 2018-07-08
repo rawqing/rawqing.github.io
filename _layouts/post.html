@@ -21,6 +21,13 @@
       <div class="post-meta">
         <span class="post-meta-item"><i class="iconfont icon-author"></i><a href="{{ site.url }}" target="_blank" rel="author">{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}</a></></span>
         <time class="post-meta-item" datetime="{{ page.date | date:"%y-%m-%d" }}"><i class="iconfont icon-date"></i>{{ page.date | date_to_string }}</time>
+          {% if site.leancloud.enable %}
+          <span id="{{ page.id }}" class="leancloud_visitors" data-flag-title="{{ page.title }}">
+              <span class="post-meta-divider "><i class="fa fa-eye"></i></span>
+              <span class="post-meta-item-text"> 阅读次数:  </span>
+              <span class="leancloud-visitors-count"></span>
+          </span>
+          {% endif %}
       </div>
     </div>
     {% if page.cover %}

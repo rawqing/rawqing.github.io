@@ -33,6 +33,12 @@ comments:
   disqus: false
   disqus_url: 'https://liaokeyu.disqus.com/embed.js'
 
+# 阅读记数
+leancloud:
+  enable: true
+  app_id: Ldm7LvIBolXNLSmjlG3KH34V-gzGzoHsz
+  app_key: o3kA8nACsRUaGNJp2OgogwbO
+
 # MathJax 公式支持 by Ray-Eldath
 mathjax: true
 
