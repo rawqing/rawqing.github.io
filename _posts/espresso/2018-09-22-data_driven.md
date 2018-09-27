@@ -327,4 +327,8 @@ tags: espresso Android UI自动化 参数化
     }
     ```
     测试结果：  
-    ![测试结果](/screenshot/espresso/ui04/testRes.jpg)
+    ![测试结果](/screenshot/espresso/ui04/testRes.jpg)  
+### 五、后记  
+遗留问题：会重复读取`yml`文件（每一个`@Test`的方法都会读取一次）。当然这也很好解决，
+方案就自由发挥咯。  
+由于各种原因，已有两月没有更新了，这次一次写完本系列吧。

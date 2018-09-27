@@ -13,6 +13,8 @@ tags: espresso Android UI自动化 Junit4
 自动化测试工具 , 其运行的速度,匹配元素的方式,主线程同步机制 都是首屈一指的 , 另外给
 case 编写过程中的调试工作提供了更多的方便.  
 
+本系列项目位于`github:` [https://github.com/rawqing/EspressoBlackBoxDemo](https://github.com/rawqing/EspressoBlackBoxDemo)
+
 
 ### 环境准备  
 1. Android studio -> Android开发IDE ,当然也是自动化case开发平台

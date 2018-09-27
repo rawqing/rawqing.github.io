@@ -7,7 +7,9 @@ author: 落雨寒霜
 tags: espresso Android UI自动化 POM
 ---
 > Page Object Model Design Pattern (页面对象模型设计模式) , 这种模型很大程度的
-增强了方法的复用 , 使测试代码的可读性和层次感也得到了明显的优化. 
+增强了方法的复用 , 使测试代码的可读性和层次感也得到了明显的优化.   
+
+本系列项目位于`github:` [https://github.com/rawqing/EspressoBlackBoxDemo](https://github.com/rawqing/EspressoBlackBoxDemo)
 
 POM 模式的基本理论这里就不讲了 , 大家课参考 [Design Patterns in Test Automation I](https://alexilyenko.github.io/patterns-1/)
  虽然不是说的`Espresso`,但基本原理都是一样的 .

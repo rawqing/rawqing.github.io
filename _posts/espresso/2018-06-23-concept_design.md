@@ -7,7 +7,9 @@ author: 落雨寒霜
 tags: espresso Android UI自动化 Junit4
 ---
 >一套完整的自动化解决方案, 必须有一套完整的框架来支撑, 其必将贯彻整个测试的生命周期,
- 从测试开始至最终的报告展示.
+ 从测试开始至最终的报告展示.  
+ 
+ 本系列项目位于`github:` [https://github.com/rawqing/EspressoBlackBoxDemo](https://github.com/rawqing/EspressoBlackBoxDemo)
 
 ### 框架构思
 不想自己coding一整套框架, 我们也一样可以通过各种零件组装起来.  
