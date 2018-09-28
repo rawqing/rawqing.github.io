@@ -3,7 +3,7 @@ layout: post
 title: '基于Espresso的Android UI自动化框架设计之四'
 subtitle: '参数化 -- 可重复使用的测试方法'
 date: 2018-09-22
-author: 落雨寒霜
+author: 雨落寒霜
 tags: espresso Android UI自动化 参数化
 ---
 > 为什么仅用参数化,而不是数据驱动?  

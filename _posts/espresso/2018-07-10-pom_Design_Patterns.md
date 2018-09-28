@@ -3,7 +3,7 @@ layout: post
 title: '基于Espresso的Android UI自动化框架设计之三'
 subtitle: '架构基础 -- POM设计模式'
 date: 2018-07-10
-author: 落雨寒霜
+author: 雨落寒霜
 tags: espresso Android UI自动化 POM
 ---
 > Page Object Model Design Pattern (页面对象模型设计模式) , 这种模型很大程度的

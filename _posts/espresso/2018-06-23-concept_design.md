@@ -3,7 +3,7 @@ layout: post
 title: '基于Espresso的Android UI自动化框架设计之二'
 subtitle: '蓝图绘制 -- 自动化测试框架设计'
 date: 2018-06-23
-author: 落雨寒霜
+author: 雨落寒霜
 tags: espresso Android UI自动化 Junit4
 ---
 >一套完整的自动化解决方案, 必须有一套完整的框架来支撑, 其必将贯彻整个测试的生命周期,

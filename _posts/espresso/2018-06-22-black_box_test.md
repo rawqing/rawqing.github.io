@@ -3,7 +3,7 @@ layout: post
 title: '基于Espresso的Android UI自动化框架设计之一'
 subtitle: '设计之初 -- espresso无源码测试环境搭建'
 date: 2018-06-22
-author: 落雨寒霜
+author: 雨落寒霜
 tags: espresso Android UI自动化 Junit4
 ---
 >为什么选黑盒测试? 毕竟很多公司UI自动化测试还都仅仅是测试工程师来做的 , 开发的参与度并没有那么高

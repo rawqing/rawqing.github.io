@@ -3,7 +3,7 @@ layout: post
 title: '基于Espresso的Android UI自动化框架设计之五'
 subtitle: '测试报告 -- 一份美好的报告是自动化测试的丰收'
 date: 2018-09-25
-author: 落雨寒霜
+author: 雨落寒霜
 tags: espresso Android UI自动化 测试报告 Allure
 ---
 > 自动化测试的最终结果往往需要一份更好的报告来展示。对于UI自动化来说，错误截图是必须的。
