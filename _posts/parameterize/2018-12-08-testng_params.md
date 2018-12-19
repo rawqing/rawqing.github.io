@@ -23,7 +23,8 @@ https://github.com/rawqing/TestngParams )
       <artifactId>TestngParams</artifactId>
       <version>2.2</version>
     </dependency>
-    ```
+    ```  
+    
 ##### 使用 gradle  
  1. 添加依赖  
     ```groovy
