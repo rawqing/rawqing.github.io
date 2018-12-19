@@ -16,16 +16,6 @@ https://github.com/rawqing/TestngParams )
 
 #### 安装  
 ##### 使用 maven  
- 1. 在 `pom.xml` 中添加远程仓库 
-    ```xml
-    <repositories>
-        <repository>
-            <id>bintray-yqing-maven</id>
-            <name>bintray</name>
-            <url>https://dl.bintray.com/yqing/maven</url>
-        </repository>
-    </repositories>
-    ```  
  1. 添加依赖  
     ```xml
     <dependency>
