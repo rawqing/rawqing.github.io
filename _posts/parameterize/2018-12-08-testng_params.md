@@ -28,22 +28,16 @@ https://github.com/rawqing/TestngParams )
     ```  
  1. 添加依赖  
     ```xml
-    <dependency> 
-       <groupId>yq.test</groupId> 
-       <artifactId>TestngParams</artifactId> 
-       <version>LAST_VERSION</version> 
+    <dependency>
+      <groupId>io.github.rawqing</groupId>
+      <artifactId>TestngParams</artifactId>
+      <version>2.2</version>
     </dependency>
     ```
 ##### 使用 gradle  
- 1. 添加远程仓库  
-    ```groovy
-    repositories { 
-       maven { url "https://dl.bintray.com/yqing/maven" } 
-    }
-    ```  
  1. 添加依赖  
     ```groovy
-    testCompile 'yq.test:TestngParams:LAST_VERSION'
+    testCompile 'io.github.rawqing:TestngParams:2.2'
     ```   
     
 #### 添加监听   
