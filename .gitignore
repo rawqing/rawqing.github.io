@@ -4,3 +4,7 @@
 node_modules
 
 _site
+Gemfile
+Gemfile.lock
+vendor/bundle
+.bundle

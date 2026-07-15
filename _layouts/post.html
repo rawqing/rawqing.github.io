@@ -21,13 +21,6 @@
       <div class="post-meta">
         <span class="post-meta-item"><i class="iconfont icon-author"></i><a href="{{ site.url }}" target="_blank" rel="author">{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}</a></></span>
         <time class="post-meta-item" datetime="{{ page.date | date:"%y-%m-%d" }}"><i class="iconfont icon-date"></i>{{ page.date | date_to_string }}</time>
-          {% if site.leancloud.enable %}
-          <span id="{{ page.id }}" class="leancloud_visitors" data-flag-title="{{ page.title }}">
-              <span class="post-meta-divider "><i class="fa fa-eye"></i></span>
-              <span class="post-meta-item-text"> 阅读次数:  </span>
-              <span class="leancloud-visitors-count"></span>
-          </span>
-          {% endif %}
       </div>
     </div>
     {% if page.cover %}
@@ -151,6 +144,26 @@
 
   <script src="/assets/js/prism.js"></script>
   <script src="/assets/js/index.min.js"></script>
+
+  {% if page.mermaid %}
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var codeBlocks = document.querySelectorAll("code.language-mermaid");
+      codeBlocks.forEach(function (code) {
+        var pre = code.parentElement;
+        var container = document.createElement("div");
+        container.className = "mermaid";
+        container.textContent = code.textContent;
+        pre.parentNode.replaceChild(container, pre);
+      });
+      if (window.mermaid) {
+        mermaid.initialize({ startOnLoad: false, theme: "default" });
+        mermaid.run();
+      }
+    });
+  </script>
+  {% endif %}
 </body>
 
 </html>

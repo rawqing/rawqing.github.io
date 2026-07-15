@@ -33,12 +33,6 @@ comments:
   disqus: false
   disqus_url: 'https://liaokeyu.disqus.com/embed.js'
 
-# 阅读记数
-leancloud:
-  enable: true
-  app_id: Ldm7LvIBolXNLSmjlG3KH34V-gzGzoHsz
-  app_key: o3kA8nACsRUaGNJp2OgogwbO
-
 # MathJax 公式支持 by Ray-Eldath
 mathjax: true
 
@@ -68,7 +62,7 @@ recommend-condition-size: 12 # a tag will be recommended if the size of it is mo
 # Build settings
 paginate: 6
 paginate_path: 'page:num'
-exclude: ['node_modules', 'dev', 'package.json', 'gulpfile.js', '.gitignore', 'README.md']
+exclude: ['node_modules', 'dev', 'package.json', 'gulpfile.js', '.gitignore', 'README.md', 'vendor', '.bundle', 'Gemfile', 'Gemfile.lock']
 
 # Markdown
 markdown: kramdown
