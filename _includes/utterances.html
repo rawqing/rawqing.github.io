@@ -1,0 +1,18 @@
+<section class="post-footer-item comment">
+  <script>
+    // 评论区初始主题直接跟随用户偏好，避免刷新时先浅后深的闪烁
+    (function () {
+      var KEY = "nightMode";
+      var isNight = localStorage.getItem(KEY) === "true";
+      var s = document.createElement("script");
+      s.src = "https://utteranc.es/client.js";
+      s.setAttribute("repo", "{{ site.utterances.repo }}");
+      s.setAttribute("issue-term", "{{ site.utterances.issue_term }}");
+      s.setAttribute("theme", isNight ? "github-dark" : "github-light");
+      s.setAttribute("crossorigin", "anonymous");
+      s.async = true;
+      {% if site.utterances.label %}s.setAttribute("label", "{{ site.utterances.label }}");{% endif %}
+      document.querySelector(".post-footer-item.comment").appendChild(s);
+    })();
+  </script>
+</section>

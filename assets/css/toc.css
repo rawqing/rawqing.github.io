@@ -1,0 +1,67 @@
+/* 文章目录 TOC：固定在视口左侧，窄屏自动隐藏 */
+.post-toc {
+  position: fixed;
+  right: 24px;
+  top: 96px;
+  width: 220px;
+  max-height: calc(100vh - 120px);
+  overflow-y: auto;
+  font-size: 13px;
+  line-height: 1.7;
+  border-right: 2px solid #eaecef;
+  padding-right: 12px;
+  color: #586069;
+  z-index: 5;
+  transition: opacity .25s ease, transform .25s ease;
+}
+/* 滚动到头图区域时淡出隐藏，避免遮挡顶部封面 */
+.post-toc.toc-hidden {
+  opacity: 0;
+  transform: translateX(12px);
+  pointer-events: none;
+}
+.post-toc .toc-title {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #24292e;
+}
+.post-toc .toc-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.post-toc .toc-h3 {
+  padding-left: 14px;
+}
+.post-toc a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  padding: 2px 0;
+  transition: color .15s;
+}
+.post-toc a:hover,
+.post-toc a.active {
+  color: #3199DB;
+}
+.post-toc a.active {
+  font-weight: 600;
+}
+
+/* 夜间模式适配 */
+.night-mode .post-toc {
+  border-color: #3a3f47;
+  color: #8b949e;
+}
+.night-mode .post-toc .toc-title {
+  color: #c8cdd3;
+}
+.night-mode .post-toc a:hover,
+.night-mode .post-toc a.active {
+  color: #58a6ff;
+}
+
+/* 窄屏隐藏，避免遮挡正文 */
+@media (max-width: 1200px) {
+  .post-toc { display: none; }
+}

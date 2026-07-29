@@ -1,0 +1,19 @@
+<!-- 全站分类导航（左侧）：按 _posts/<分类>/ 目录自动分组，当前文章高亮 -->
+<nav class="site-sidebar" id="site-sidebar" aria-label="文章分类导航">
+  {% for c in site.data.categories %}
+  <div class="sb-group">
+    <div class="sb-group-title">{{ c.title }}</div>
+    <ul class="sb-list">
+      {% for post in site.posts %}
+        {% assign after = post.path | split: '_posts/' %}
+        {% assign cat = after[1] | split: '/' | first %}
+        {% if cat == c.key %}
+        <li class="sb-item{% if post.url == page.url %} active{% endif %}">
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+  {% endfor %}
+</nav>

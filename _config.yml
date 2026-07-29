@@ -2,7 +2,7 @@
 title: '雨落寒霜的个人博客'
 description: ''
 keyword: '雨落寒霜, 雨落寒霜的个人博客, 雨落寒霜的博客, 测试, 测试开发, java, groovy, kotlin, swift, app测试'
-url: 'http://rawqing.github.io' # your host
+url: 'https://rawqing.github.io' # your host
 
 # if you don't need baseurl, you should leave this value blank.
 baseurl: ''
@@ -32,6 +32,19 @@ nightMode: true
 comments:
   disqus: false
   disqus_url: 'https://liaokeyu.disqus.com/embed.js'
+
+# Utterances 留言功能（基于 GitHub Issues 的 GitHub App，前端无需任何 secret）
+# 使用方法：
+# 1. 在仓库安装 Utterances App：https://github.com/apps/utterances
+# 2. 安装时授权目标仓库（需开启 Issues，默认开启）
+# 3. 把下面 repo 改成 "用户名/仓库名" 格式
+# 4. 把 enable 改为 true
+utterances:
+  enable: true                      # 安装 App 并填好 repo 后改为 true 启用
+  repo: 'rawqing/rawqing.github.io'  # 格式必须是 owner/repo
+  issue_term: 'pathname'             # 用文章路径映射 Issue（可选 pathname/url/title/og:title）
+  theme: 'github-light'              # 可选 github-light / github-dark
+  label: 'comment'                  # 给评论 Issue 打的标签（留空则用默认）
 
 # MathJax 公式支持 by Ray-Eldath
 mathjax: true
@@ -70,12 +83,12 @@ highlighter: rouge
 kramdown:
   input: GFM
 
-# RSS
-RSS: false
+# 文章目录 TOC（文章页左侧导航）
+toc: true
 
 # Permalink
 # See: https://github.com/kaeyleo/jekyll-theme-H2O/issues/35
 permalink: /:year/:month/:day/:title.html
 
 # Plugins
-plugins: [jekyll-paginate]
+plugins: [jekyll-paginate, jekyll-sitemap]

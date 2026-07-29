@@ -1,0 +1,70 @@
+/* 全站分类导航（左侧，readthedocs 风格）：固定在视口左侧，窄屏自动隐藏 */
+.site-sidebar {
+  position: fixed;
+  left: 0;
+  top: 80px;
+  bottom: 0;
+  width: 240px;
+  padding: 24px 16px 32px 24px;
+  overflow-y: auto;
+  font-size: 13px;
+  line-height: 1.6;
+  border-right: 1px solid #eaecef;
+  background: #ffffff;
+  z-index: 4;
+  transition: opacity .25s ease, transform .25s ease;
+}
+/* 滚动到头图区域时淡出隐藏，避免遮挡顶部封面 */
+.site-sidebar.toc-hidden {
+  opacity: 0;
+  transform: translateX(-12px);
+  pointer-events: none;
+}
+.site-sidebar .sb-group {
+  margin-bottom: 18px;
+}
+.site-sidebar .sb-group-title {
+  font-weight: 600;
+  color: #24292e;
+  margin-bottom: 6px;
+}
+.site-sidebar .sb-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.site-sidebar .sb-item a {
+  display: block;
+  padding: 3px 0;
+  color: #586069;
+  text-decoration: none;
+  transition: color .15s;
+}
+.site-sidebar .sb-item a:hover {
+  color: #3199DB;
+}
+.site-sidebar .sb-item.active a {
+  color: #3199DB;
+  font-weight: 600;
+}
+
+/* 夜间模式适配 */
+.night-mode .site-sidebar {
+  background: #1e2125;
+  border-color: #3a3f47;
+}
+.night-mode .site-sidebar .sb-group-title {
+  color: #c8cdd3;
+}
+.night-mode .site-sidebar .sb-item a {
+  color: #8b949e;
+}
+.night-mode .site-sidebar .sb-item a:hover,
+.night-mode .site-sidebar .sb-item.active a {
+  color: #58a6ff;
+}
+
+/* 窄屏隐藏，避免遮挡正文 */
+@media (max-width: 1200px) {
+  .site-sidebar { display: none; }
+}

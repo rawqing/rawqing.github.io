@@ -1,0 +1,11 @@
+# 文章分类导航：顺序即左侧分组顺序，key 对应 _posts/<key>/ 目录名
+- key: ai
+  title: AI 技术与大模型评测
+- key: espresso
+  title: Espresso 安卓 UI 自动化
+- key: xctest
+  title: XCTest iOS 自动化
+- key: parameterize
+  title: 参数化测试
+- key: notes
+  title: 随笔笔记
