@@ -21,6 +21,7 @@
       <div class="post-meta">
         <span class="post-meta-item"><i class="iconfont icon-author"></i><a href="{{ site.url }}" target="_blank" rel="author">{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}</a></></span>
         <time class="post-meta-item" datetime="{{ page.date | date:"%y-%m-%d" }}"><i class="iconfont icon-date"></i>{{ page.date | date_to_string }}</time>
+        <span class="post-meta-item" id="busuanzi_container_page_pv"><i class="fa fa-eye" style="margin-right:4px"></i><span id="busuanzi_value_page_pv"></span> 次阅读</span>
       </div>
     </div>
     {% if page.cover %}
@@ -46,10 +47,6 @@
       <div class="social-share"></div>
     </div>
     {% endif %}
-
-    <div class="post-pv">
-      <span id="busuanzi_container_page_pv">本文总阅读量 <span id="busuanzi_value_page_pv"></span> 次</span>
-    </div>
   </div>
 
   {% if site.toc %}
