@@ -1,0 +1,25 @@
+/* 阅读量统计（不蒜子 busuanzi）：文章页「本文阅读量」与页脚「全站访问量」 */
+.post-pv {
+  margin: 18px 0 4px;
+  font-size: 13px;
+  color: #586069;
+}
+.post-pv #busuanzi_value_page_pv {
+  font-weight: 600;
+  color: #3199DB;
+}
+.busuanzi {
+  font-size: 12px;
+  color: #9aa0a6;
+}
+
+/* 夜间模式适配 */
+.night-mode .post-pv {
+  color: #8b949e;
+}
+.night-mode .post-pv #busuanzi_value_page_pv {
+  color: #58a6ff;
+}
+.night-mode .busuanzi {
+  color: #6e7681;
+}

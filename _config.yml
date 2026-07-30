@@ -86,6 +86,11 @@ kramdown:
 # 文章目录 TOC（文章页左侧导航）
 toc: true
 
+# 访问统计（百度统计）：前往 https://tongji.baidu.com 注册并添加站点，
+# 获取「站点ID」（一串纯数字），将下面引号内填上即可生效；留空 '' 则不加载统计脚本
+analytics:
+  baidu: 'cea8b3e09b48f0ac198cf7a29e3b4f37'
+
 # Permalink
 # See: https://github.com/kaeyleo/jekyll-theme-H2O/issues/35
 permalink: /:year/:month/:day/:title.html
