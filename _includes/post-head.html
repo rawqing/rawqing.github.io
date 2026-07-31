@@ -20,6 +20,10 @@
     <link rel="stylesheet" href="/assets/css/toc.css">
     <link rel="stylesheet" href="/assets/css/sidebar.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+    {% if page.cover %}
+    <!-- 预加载封面图，与 CSS 并行下载，减少「默认底图先闪现」 -->
+    <link rel="preload" as="image" href="{{ page.cover }}">
+    {% endif %}
     <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
 	{% if site.mathjax %}
 	{% include mathjax.html %}
