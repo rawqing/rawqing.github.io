@@ -7,5 +7,7 @@
   title: XCTest iOS 自动化
 - key: parameterize
   title: 参数化测试
+- key: test-methodology
+  title: 测试方法论
 - key: notes
   title: 随笔笔记
