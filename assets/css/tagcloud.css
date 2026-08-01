@@ -1,0 +1,59 @@
+/* 首页右侧标签云：按出现次数（热度）用字号与颜色深浅表达，词语自然错落排列 */
+/* 选择器前缀 .tags-card.tag-cloud 用于提升优先级，覆盖 app.min.css 的 .tags-card .tag */
+.tags-card.tag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 4px 10px;
+  line-height: 2;
+  text-align: center;
+}
+.tags-card.tag-cloud .tag {
+  height: auto;
+  padding: 0 2px;
+  margin: 0;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0;
+  font-weight: 400;
+  transition: color .2s, transform .2s;
+  white-space: nowrap;
+}
+.tags-card.tag-cloud .tag:hover {
+  color: #3199DB;
+  transform: translateY(-2px) scale(1.08);
+}
+
+/* 热度档位：cnt 为标签出现次数，字号与颜色随热度递增（前缀提升优先级） */
+/* 1 次：小灰字 */
+.tags-card.tag-cloud .tag-weight-1 { font-size: 13px; color: #bcc1c7; }
+/* 2 次 */
+.tags-card.tag-cloud .tag-weight-2 { font-size: 15px; color: #9aa0a6; }
+/* 3 次 */
+.tags-card.tag-cloud .tag-weight-3 { font-size: 17px; color: #6f7780; }
+/* 4~5 次 */
+.tags-card.tag-cloud .tag-weight-4, .tags-card.tag-cloud .tag-weight-5 { font-size: 19px; color: #4e4e4e; }
+/* 6~7 次 */
+.tags-card.tag-cloud .tag-weight-6, .tags-card.tag-cloud .tag-weight-7 { font-size: 21px; color: #3199DB; }
+/* 8 次及以上：最大最蓝 */
+.tags-card.tag-cloud .tag-weight-8, .tags-card.tag-cloud .tag-weight-9, .tags-card.tag-cloud .tag-weight-10,
+.tags-card.tag-cloud .tag-weight-11, .tags-card.tag-cloud .tag-weight-12, .tags-card.tag-cloud .tag-weight-13,
+.tags-card.tag-cloud .tag-weight-14, .tags-card.tag-cloud .tag-weight-15, .tags-card.tag-cloud .tag-weight-16,
+.tags-card.tag-cloud .tag-weight-17, .tags-card.tag-cloud .tag-weight-18, .tags-card.tag-cloud .tag-weight-19,
+.tags-card.tag-cloud .tag-weight-20, .tags-card.tag-cloud .tag-weight-21, .tags-card.tag-cloud .tag-weight-22,
+.tags-card.tag-cloud .tag-weight-23, .tags-card.tag-cloud .tag-weight-24, .tags-card.tag-cloud .tag-weight-25 { font-size: 24px; color: #155f99; }
+
+/* 夜间模式适配 */
+.night-mode .tags-card.tag-cloud .tag { color: #6e7681; }
+.night-mode .tags-card.tag-cloud .tag:hover { color: #58a6ff; }
+.night-mode .tags-card.tag-cloud .tag-weight-1 { color: #6e7681; }
+.night-mode .tags-card.tag-cloud .tag-weight-4, .night-mode .tags-card.tag-cloud .tag-weight-5,
+.night-mode .tags-card.tag-cloud .tag-weight-6, .night-mode .tags-card.tag-cloud .tag-weight-7 { color: #c9d1d9; }
+.night-mode .tags-card.tag-cloud .tag-weight-8, .night-mode .tags-card.tag-cloud .tag-weight-9, .night-mode .tags-card.tag-cloud .tag-weight-10,
+.night-mode .tags-card.tag-cloud .tag-weight-11, .night-mode .tags-card.tag-cloud .tag-weight-12, .night-mode .tags-card.tag-cloud .tag-weight-13,
+.night-mode .tags-card.tag-cloud .tag-weight-14, .night-mode .tags-card.tag-cloud .tag-weight-15, .night-mode .tags-card.tag-cloud .tag-weight-16,
+.night-mode .tags-card.tag-cloud .tag-weight-17, .night-mode .tags-card.tag-cloud .tag-weight-18, .night-mode .tags-card.tag-cloud .tag-weight-19,
+.night-mode .tags-card.tag-cloud .tag-weight-20, .night-mode .tags-card.tag-cloud .tag-weight-21, .night-mode .tags-card.tag-cloud .tag-weight-22,
+.night-mode .tags-card.tag-cloud .tag-weight-23, .night-mode .tags-card.tag-cloud .tag-weight-24, .night-mode .tags-card.tag-cloud .tag-weight-25 { color: #79c0ff; }

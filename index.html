@@ -77,14 +77,33 @@ header-img: /assets/img/mantuolou.jpg
                 {% endif %}
             </section>
 
-            {% if site.recommend-tags and site.tags.size>0 %}
-            <section class="tags-card">
-                {% for tag in site.tags %}
-                    {% if forloop.index > site.recommend-condition-size %}
-                        {% break %}
-                    {% endif %}
-                    <a href="{{ "tags.html#" | append: tag[0] | prepend: site.baseurl }}" class="tag">{{ tag[0]}}</a>
+            {% if site.recommend-tags %}
+            {% comment %}聚合每篇文章的标签（Jekyll 已按空格切碎为词），统计每个词的出现次数作为热度{% endcomment %}
+            {% assign tag_counts = "" | split: "," %}
+            {% for post in site.posts %}
+              {% for t in post.tags %}
+                {% unless t == "" %}
+                  {% unless tag_counts contains t %}
+                    {% assign tag_counts = tag_counts | push: t %}
+                  {% endunless %}
+                {% endunless %}
+              {% endfor %}
+            {% endfor %}
+            <section class="tags-card tag-cloud">
+              {% comment %}先算出每个标签的真实出现次数{% endcomment %}
+              {% assign counts = "" | split: "," %}
+              {% for t in tag_counts %}
+                {% assign cnt = 0 %}
+                {% for post in site.posts %}
+                  {% if post.tags contains t %}{% assign cnt = cnt | plus: 1 %}{% endif %}
                 {% endfor %}
+                {% assign counts = counts | push: cnt %}
+              {% endfor %}
+              {% comment %}保留首次出现顺序（天然乱序），避免按字母排列显得刻板；字号/颜色由 cnt 档位决定{% endcomment %}
+              {% for t in tag_counts %}
+                {% assign cnt = counts[forloop.index0] | plus: 0 %}
+                <a href="{{ "tags.html#" | append: t | prepend: site.baseurl }}" class="tag tag-weight-{{ cnt }}">{{ t }}</a>
+              {% endfor %}
             </section>
             {% endif %}
         </div>

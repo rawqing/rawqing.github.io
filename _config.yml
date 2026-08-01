@@ -1,7 +1,7 @@
 # Site settings 配置站点
 title: '雨落寒霜的个人博客'
 description: ''
-keyword: '雨落寒霜, 雨落寒霜的个人博客, 雨落寒霜的博客, 测试, 测试开发, java, groovy, kotlin, swift, app测试'
+keyword: '雨落寒霜, 雨落寒霜的个人博客, 雨落寒霜的博客, AI, AI测试, Agent测试, LLM, 知识库, 大模型, RAG, 测试开发, java, groovy, kotlin, swift, app测试'
 url: 'https://rawqing.github.io' # your host
 
 # if you don't need baseurl, you should leave this value blank.
@@ -70,7 +70,7 @@ sns:
 
 # Tags 设置标签
 recommend-tags: true # whether or not display recommend-tags on the sidebar
-recommend-condition-size: 12 # a tag will be recommended if the size of it is more than this value
+recommend-condition-size: 20 # a tag will be recommended if the size of it is more than this value
 
 # Build settings
 paginate: 6
