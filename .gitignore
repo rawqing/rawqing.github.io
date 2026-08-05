@@ -8,3 +8,4 @@ Gemfile
 Gemfile.lock
 vendor/bundle
 .bundle
+.history

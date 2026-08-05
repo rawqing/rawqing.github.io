@@ -637,3 +637,19 @@ li p:nth-child(2) {
 .markdown-body hr {
   border-bottom-color: #eee;
 }
+
+/* 暗色模式表格适配：覆盖 GitHub 默认白底/斑马纹 */
+.night-mode .markdown-body table tr {
+  background-color: transparent;
+  border-top-color: #3b4048;
+}
+.night-mode .markdown-body table tr:nth-child(2n) {
+  background-color: #2f343c;
+}
+.night-mode .markdown-body table th,
+.night-mode .markdown-body table td {
+  border-color: #3b4048;
+}
+.night-mode .markdown-body table th {
+  color: #c9d1d9;
+}

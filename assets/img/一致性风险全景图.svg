@@ -1,0 +1,48 @@
+<svg viewBox="0 0 680 310" width="680" height="310" preserveAspectRatio="xMidYMid meet" style="max-width:100%;height:auto" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>一致性风险全景图</title>
+  <desc>一致性风险横贯全技术栈：应用层、基础设施层、核心协议层，越底层越根本、越难被功能测试撞到</desc>
+  <defs>
+    <marker id="dot" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <circle cx="5" cy="5" r="2.5" fill="#9DB4B4"/>
+    </marker>
+  </defs>
+  <text x="340" y="32" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="600" fill="#2C3E50">一致性风险横贯全技术栈</text>
+
+  <rect x="30" y="52" width="182" height="206" rx="14" fill="#EAF4F4" stroke="#C2DBDB" stroke-width="1.5"/>
+  <text x="121" y="80" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="700" fill="#2C6E6A">应用层</text>
+  <line x1="50" y1="90" x2="192" y2="90" stroke="#C2DBDB" stroke-width="1"/>
+  <text x="121" y="112" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#7BA8A4">典型风险</text>
+  <text x="121" y="130" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#234F4C">缓存旧值回填</text>
+  <text x="121" y="148" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#234F4C">双写脏不一致</text>
+  <text x="121" y="178" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#7BA8A4">案例</text>
+  <text x="121" y="196" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#234F4C">Cache-Aside 竞态</text>
+  <text x="121" y="226" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#7BA8A4">测法</text>
+  <text x="121" y="244" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#234F4C">组件级可复现</text>
+
+  <rect x="249" y="52" width="182" height="206" rx="14" fill="#CFE8E6" stroke="#9FCFCB" stroke-width="1.5"/>
+  <text x="340" y="80" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="700" fill="#1F5754">基础设施层</text>
+  <line x1="269" y1="90" x2="411" y2="90" stroke="#9FCFCB" stroke-width="1"/>
+  <text x="340" y="112" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#5E908C">典型风险</text>
+  <text x="340" y="130" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#173F3D">管道丢 / 重 / 乱序</text>
+  <text x="340" y="148" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#173F3D">消费失败</text>
+  <text x="340" y="178" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#5E908C">案例</text>
+  <text x="340" y="196" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#173F3D">NATS 丢 13 万条</text>
+  <text x="340" y="226" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#5E908C">测法</text>
+  <text x="340" y="244" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#173F3D">故障注入</text>
+
+  <rect x="468" y="52" width="182" height="206" rx="14" fill="#A6D2CF" stroke="#74B0AC" stroke-width="1.5"/>
+  <text x="559" y="80" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="700" fill="#143B39">核心协议层</text>
+  <line x1="488" y1="90" x2="630" y2="90" stroke="#74B0AC" stroke-width="1"/>
+  <text x="559" y="112" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#3E7A76">典型风险</text>
+  <text x="559" y="130" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#0F2E2C">复制选主竞态</text>
+  <text x="559" y="148" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#0F2E2C">分区脑裂</text>
+  <text x="559" y="178" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#3E7A76">案例</text>
+  <text x="559" y="196" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#0F2E2C">DynamoDB 丢数据</text>
+  <text x="559" y="226" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#3E7A76">测法</text>
+  <text x="559" y="244" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#0F2E2C">形式化验证</text>
+
+  <line x1="213" y1="155" x2="246" y2="155" stroke="#9DB4B4" stroke-width="1.5" marker-end="url(#dot)"/>
+  <line x1="432" y1="155" x2="465" y2="155" stroke="#9DB4B4" stroke-width="1.5" marker-end="url(#dot)"/>
+
+  <text x="340" y="290" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5A6B6B">越往底层，后果越不可逆、越难被功能测试撞到</text>
+</svg>

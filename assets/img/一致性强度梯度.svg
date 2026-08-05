@@ -1,0 +1,25 @@
+<svg viewBox="0 0 680 240" width="680" height="240" preserveAspectRatio="xMidYMid meet" style="max-width:100%;height:auto" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>一致性强度连续梯度</title>
+  <desc>从线性一致（最强）到最终一致（最弱）的连续梯度，系统选一点承诺强度</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#185FA5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <text x="340" y="28" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="600" fill="#1a1a1a">一致性是一条连续梯度：从"最强"到"最弱"</text>
+  <text x="110" y="62" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="500" fill="#185FA5">最强</text>
+  <text x="600" y="62" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="500" fill="#888780">最弱</text>
+  <line x1="110" y1="100" x2="592" y2="100" stroke="#185FA5" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <circle cx="110" cy="100" r="18" fill="#185FA5"/>
+  <circle cx="232" cy="100" r="18" fill="#378ADD"/>
+  <circle cx="355" cy="100" r="18" fill="#85B7EB"/>
+  <circle cx="478" cy="100" r="18" fill="#B5D4F4" stroke="#185FA5" stroke-width="0.5"/>
+  <circle cx="600" cy="100" r="18" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+  <text x="110" y="138" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#1a1a1a">线性一致</text>
+  <text x="232" y="138" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#1a1a1a">顺序一致</text>
+  <text x="355" y="138" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#1a1a1a">因果一致</text>
+  <text x="478" y="138" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#1a1a1a">会话级</text>
+  <text x="600" y="138" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#1a1a1a">最终一致</text>
+  <text x="340" y="184" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#444441">强度递减趋势 — 系统在这条线上选一个点，承诺"我只保证到这个强度"</text>
+  <text x="340" y="210" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#888780">读到了旧值，先问：系统承诺的是哪一级？</text>
+</svg>
